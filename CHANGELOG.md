@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-17)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`448abe7`](https://github.com/stdlib-js/stdlib/commit/448abe7364d055ee1f0e069276024ad9fec9c179) - **docs:** improve doctests for ndarray instances in `ndarray/reverse` [(#11508)](https://github.com/stdlib-js/stdlib/pull/11508) _(by Uday Kakade)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Uday Kakade
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
