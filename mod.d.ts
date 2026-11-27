@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,23 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isndarrayLike = require( '@stdlib/assert-is-ndarray-like' );
-var base = require( '@stdlib/ndarray-base-reverse' );
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Returns a read-only view of an input ndarray in which the order of elements along each dimension is reversed.
 *
-* @param {ndarray} x - input array
-* @throws {TypeError} first argument must be an ndarray
-* @returns {ndarray} ndarray view
+* @param x - input array
+* @returns output array
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray-ctor' );
@@ -48,14 +42,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var y = reverse( x );
 * // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 */
-function reverse( x ) {
-	if ( !isndarrayLike( x ) ) {
-		throw new TypeError( format( '2X94f', x ) );
-	}
-	return base( x, false );
-}
+declare function reverse<T extends ndarray = ndarray>( x: T ): T;
 
 
 // EXPORTS //
 
-module.exports = reverse;
+export = reverse;
